@@ -13,6 +13,7 @@ import Products from './routes/Products';
 import { Carts } from './routes/Carts';
 import Header from './components/Header';
 import Product_det from './routes/Product_det';
+import Cart_det from './routes/Cart_det';
 
 
 
@@ -37,6 +38,9 @@ const router = createBrowserRouter([
   },{
     path:'/products/:productID',
     element: <Product_det />
+  },{
+    path:"/carts/:cartID",
+    element: <Cart_det />
   }
 ])
 

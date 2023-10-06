@@ -60,3 +60,24 @@ li a:hover {
     color: #333;
     margin-bottom: 5px;
 }
+.cart_products{
+  font-size: medium;
+  color: #333;
+  margin-left: 10px;
+  margin-top: 10px;
+  
+}
+.cart_details{
+  width: 25rem;
+  height: 15rem;
+  border: 2px solid black;
+  margin-left: 40%;
+
+}
+/* h1{
+  margin-left: 15px;
+} */
+p{
+  margin-left: 10px;
+  margin-top: 5px;
+}
