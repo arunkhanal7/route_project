@@ -14,6 +14,11 @@ import { Carts } from './routes/Carts';
 import Header from './components/Header';
 import Product_det from './routes/Product_det';
 import Cart_det from './routes/Cart_det';
+import store from './store';
+import { Provider } from 'react-redux';
+import Login from './routes/Login';
+import SignUp from './routes/SignUp';
+
 
 
 
@@ -41,14 +46,23 @@ const router = createBrowserRouter([
   },{
     path:"/carts/:cartID",
     element: <Cart_det />
-  }
+  },{
+    path:"/login",
+    element: <Login />
+    
+  },{
+    path:"/signup",
+    element: <SignUp />
+    
+  },
 ])
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <Header ></Header>
-    <RouterProvider router={router} />
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
   </React.StrictMode>
 );
 

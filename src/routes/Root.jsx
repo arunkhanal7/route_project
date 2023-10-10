@@ -1,11 +1,13 @@
 import React from 'react'
 import { Outlet } from 'react-router-dom'
 import { Link } from 'react-router-dom'
+import Header from "../components/Header"
 
 const root = () => {
   return (
     <>
     
+    <Header/>
     <div style={{display:"flex"}}>
     <nav>
           <ul>
